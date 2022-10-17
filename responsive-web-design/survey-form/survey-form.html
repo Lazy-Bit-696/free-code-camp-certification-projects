@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">short description</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label"
+        ><input
+          placeholder="Enter name"
+          type="text"
+          name="name"
+          id="name"
+          required
+      /></label>
+      <label for="email" id="email-label"
+        ><input
+          type="email"
+          placeholder="Enter email"
+          name="email"
+          id="email"
+          required
+      /></label>
+      <label for="number" id="number-label"
+        ><input
+          type="number"
+          name="number"
+          placeholder="Enter number"
+          id="number"
+          min="0"
+          max="9"
+      /></label>
+      <select name="" id="dropdown">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <input type="radio" name="" id="" />
+      <input type="radio" name="" id="" />
+      <input type="checkbox" name="" id="" /><input
+        type="checkbox"
+        name=""
+        id=""
+      /><input type="checkbox" name="" id="" /><input
+        type="checkbox"
+        name=""
+        id=""
+      /><input type="checkbox" name="" id="" />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
 </html>
