@@ -10,49 +10,51 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">short description</p>
     <form action="" id="survey-form">
-      <label for="name" id="name-label"
-        ><input
+      <label for="name" id="name-label"></label>
+        Name:
+        <input
           placeholder="Enter name"
           type="text"
           name="name"
           id="name"
           required
-      /></label>
-      <label for="email" id="email-label"
-        ><input
+        />
+      </label>
+      <label for="email" id="email-label">
+        Email:
+        <input
           type="email"
           placeholder="Enter email"
           name="email"
           id="email"
           required
-      /></label>
-      <label for="number" id="number-label"
-        ><input
+        />
+      </label>
+      <label for="number" id="number-label">
+        Age:
+        <input
           type="number"
           name="number"
           placeholder="Enter number"
           id="number"
-          min="0"
-          max="9"
-      /></label>
+          min="18"
+          max="120"
+        />
+      </label>
       <select name="" id="dropdown">
         <option value=""></option>
         <option value=""></option>
         <option value=""></option>
       </select>
-      <input type="radio" name="" id="" />
-      <input type="radio" name="" id="" />
-      <input type="checkbox" name="" id="" /><input
-        type="checkbox"
-        name=""
-        id=""
-      /><input type="checkbox" name="" id="" /><input
-        type="checkbox"
-        name=""
-        id=""
-      /><input type="checkbox" name="" id="" />
+      <input type="radio" name="rad" id="" value="r1" />
+      <input type="radio" name="rad" id="" value="r2" />
+      <input type="checkbox" name="" id="" value="0" />
+      <input type="checkbox" name="" id="" value="1" />
+      <input type="checkbox" name="" id="" value="2" />
+      <input type="checkbox" name="" id="" value="3" />
+      <input type="checkbox" name="" id="" value="4" />
       <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="Submit" id="submit"/>
+      <input type="submit" value="Submit" id="submit" />
     </form>
   </body>
 </html>
