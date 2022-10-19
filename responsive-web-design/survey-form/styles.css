@@ -1,0 +1,69 @@
+body {
+    /* background-color: rgb(53, 47, 47); */
+    background-image: url(https://wallpaperaccess.com/full/17350.jpg);
+    background-position: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.829);
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+form {
+    margin: 1em auto;
+    max-width: 600px;
+    padding: 1em;
+    background-color: rgba(238, 34, 34, 0.658);
+}
+
+label {
+    display: block;
+    margin: 0.2em auto;
+}
+
+fieldset {
+    margin: 1em auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    font-size: 20px;
+    min-height: 1em;
+}
+
+.radio-check input {
+    width: unset;
+    display: inline;
+    min-height: unset;
+}
+
+input[type="submit"] {
+    width: unset;
+    display: block;
+    margin: auto auto 1em;
+    font-size: 30px;
+    background-color: red;
+    color: aliceblue;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    font-size: 32px;
+}
+
+input[type="submit"]:active {
+    background-color: brown;
+    border: 1px solid brown;
+}

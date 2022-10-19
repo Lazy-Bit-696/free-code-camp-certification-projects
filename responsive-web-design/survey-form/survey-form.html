@@ -5,56 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">short description</p>
+    <h1 id="title">One Piece Fan?</h1>
+    <p id="description">A small survey about One Piece</p>
     <form action="" id="survey-form">
-      <label for="name" id="name-label"></label>
-        Name:
-        <input
-          placeholder="Enter name"
-          type="text"
-          name="name"
-          id="name"
-          required
-        />
-      </label>
-      <label for="email" id="email-label">
-        Email:
-        <input
-          type="email"
-          placeholder="Enter email"
-          name="email"
-          id="email"
-          required
-        />
-      </label>
-      <label for="number" id="number-label">
-        Age:
-        <input
-          type="number"
-          name="number"
-          placeholder="Enter number"
-          id="number"
-          min="18"
-          max="120"
-        />
-      </label>
-      <select name="" id="dropdown">
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
-      </select>
-      <input type="radio" name="rad" id="" value="r1" />
-      <input type="radio" name="rad" id="" value="r2" />
-      <input type="checkbox" name="" id="" value="0" />
-      <input type="checkbox" name="" id="" value="1" />
-      <input type="checkbox" name="" id="" value="2" />
-      <input type="checkbox" name="" id="" value="3" />
-      <input type="checkbox" name="" id="" value="4" />
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <fieldset>
+        <legend>Personal Info</legend>
+          <label for="name" id="name-label">
+            Your name:
+            <input
+              placeholder="Enter name"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+          </label>
+          <label for="email" id="email-label">
+            Your email:
+            <input
+              type="email"
+              placeholder="Enter email"
+              name="email"
+              id="email"
+              required
+            />
+          </label>
+      </fieldset>
+
+      <fieldset class="radio-check">
+        <legend>Do you watch or read one piece:</legend>
+          <label for="yes"><input type="radio" name="watch-or-read" value="yes" id="yes"/> Yes</label>
+          <label for="no"><input type="radio" name="watch-or-read" value="no" id="no"/> No</label>
+    </fieldset>
+
+      <fieldset>
+        <legend>One Piece preference</legend>
+          <label for="number" id="number-label">
+            Since when you started one piece:
+            <input
+              type="number"
+              name="number"
+              placeholder="Enter year"
+              id="number"
+              min="1997"
+              max="2022"
+            />
+          </label>
+          <label for="dropdown">
+            Anime or Manga:
+              <select name="dropdown" id="dropdown">
+                <option value="">(select)</option>
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+                <option value="both">Both</option>
+              </select>
+          </label>
+      </fieldset>
+
+      <fieldset class="radio-check">
+        <legend>What do you like about one piece?</legend>
+          <label for="characters"><input type="checkbox" name="like" id="characters" value="characters" /> Characters</label>
+          <label for="world-building"><input type="checkbox" name="like" id="world-building" value="world-building" /> World Building</label>
+          <label for="story"><input type="checkbox" name="like" id="story" value="story" /> Story</label>
+          <label for="powers"><input type="checkbox" name="like" id="powers" value="powers" /> Powers</label>
+          <label for="other"><input type="checkbox" name="like" id="other" value="other" /> Other</label>
+      </fieldset>
+      <fieldset>
+        <legend>Tell more about One Piece: </legend>
+        <textarea name="" id="" rows="5"></textarea>
+      </fieldset>
       <input type="submit" value="Submit" id="submit" />
     </form>
   </body>
